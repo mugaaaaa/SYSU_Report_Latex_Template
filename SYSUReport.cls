@@ -126,6 +126,9 @@
 %% 常用图片文件夹路径
 \graphicspath{{figures/}{figure/}{pictures/}{picture/}{pic/}{pics/}{image/}{images/}}
 
+\usepackage{tcolorbox}
+\tcbuselibrary{listings,skins} % 加载代码支持和皮肤库
+
 %%在这里可更改封面logo
 \newcommand{\cover}{
     %%封面校名logo，图片都在figures文件夹里
@@ -133,7 +136,7 @@
         \begin{figure}
             \centering
             \vspace{2cm}
-            \includegraphics[width=0.6\textwidth]{sysu.jpg}
+            \includegraphics[width=0.6\textwidth]{SYSU_CSE.jpg}
         \end{figure}
 
         \vspace*{\fill}
@@ -159,3 +162,14 @@
     \end{center}
 }
 
+% 设置listings宏包的样式
+\lstset{
+    numbers=left,
+    basicstyle=\ttfamily\footnotesize, % 使用tt字体
+    keywordstyle=\color{blue!100}, % 关键字颜色
+    commentstyle=\color{gray!70}, % 注释颜色
+    stringstyle=\color{red}, % 字符串颜色
+    breaklines=true, % 自动换行
+    backgroundcolor=\color{gray!10},
+    frame = tb;
+}
