@@ -1,0 +1,9 @@
+\begin{Verbatim}[commandchars=\\\{\}]
+\PYG{k+kd}{interface}\PYG{+w}{ }\PYG{n+nx}{Point}\PYG{+w}{ }\PYG{p}{\PYGZob{}}
+\PYG{+w}{  }\PYG{n+nx}{x}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{number}\PYG{p}{;}
+\PYG{+w}{  }\PYG{n+nx}{y}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{number}\PYG{p}{;}
+\PYG{p}{\PYGZcb{}}
+
+\PYG{k+kd}{const}\PYG{+w}{ }\PYG{n+nx}{distance}\PYG{+w}{ }\PYG{o}{=}\PYG{+w}{ }\PYG{p}{(\PYGZob{}}\PYG{n+nx}{x}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{x1}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{y1}\PYG{p}{\PYGZcb{}}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{Point}\PYG{p}{,}\PYG{+w}{ }\PYG{p}{\PYGZob{}}\PYG{n+nx}{x}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{x2}\PYG{p}{,}\PYG{+w}{ }\PYG{n+nx}{y}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{y2}\PYG{p}{\PYGZcb{}}\PYG{o}{:}\PYG{+w}{ }\PYG{n+nx}{Point}\PYG{p}{)}\PYG{o}{:}\PYG{+w}{ }\PYG{k+kt}{number}\PYG{+w}{ }\PYG{p}{=\PYGZgt{}}
+\PYG{+w}{  }\PYG{n+nb}{Math}\PYG{p}{.}\PYG{n+nx}{sqrt}\PYG{p}{(}\PYG{n+nb}{Math}\PYG{p}{.}\PYG{n+nx}{pow}\PYG{p}{(}\PYG{n+nx}{x2}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nx}{x1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{2}\PYG{p}{)}\PYG{+w}{ }\PYG{o}{+}\PYG{+w}{ }\PYG{n+nb}{Math}\PYG{p}{.}\PYG{n+nx}{pow}\PYG{p}{(}\PYG{n+nx}{y2}\PYG{+w}{ }\PYG{o}{\PYGZhy{}}\PYG{+w}{ }\PYG{n+nx}{y1}\PYG{p}{,}\PYG{+w}{ }\PYG{l+m+mf}{2}\PYG{p}{));}
+\end{Verbatim}

@@ -46,6 +46,7 @@
 \RequirePackage{hyperref}
 \RequirePackage{booktabs}
 \RequirePackage{tcolorbox}
+\RequirePackage{minted}
 
 \definecolor{myteal}{cmyk}{1,0,1,0.60} % 主题色改为中大绿
 %% 更改摘要二字的样式
@@ -173,3 +174,5 @@
     backgroundcolor=\color{gray!10},
     frame = tb;
 }
+
+\usemintedstyle{friendly} % 选择 minted 主题

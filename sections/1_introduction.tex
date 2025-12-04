@@ -1,0 +1,19 @@
+\section{代码展示}
+
+\subsection{lstlisting 示例}
+
+\begin{lstlisting}[language=python]
+class MHA(nn.Module):
+    def __init__(self):
+        super().__init__()
+        head_size = cfg.n_embd // cfg.n_head
+        self.heads = nn.ModuleList([Head(head_size) for _ in range(cfg.n_head)])
+        self.proj = nn.Linear(cfg.n_embd, cfg.n_embd)
+        self.resid_dropout = nn.Dropout(cfg.resid_pdrop)
+
+    def forward(self, x):
+        out = torch.cat([h(x) for h in self.heads], dim=-1)
+        out = self.proj(out)
+        out = self.resid_dropout(out)
+        return out
+\end{lstlisting}
